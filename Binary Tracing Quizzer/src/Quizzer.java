@@ -5,6 +5,7 @@ import java.util.Comparator;
 
 public class Quizzer
 {
+	static boolean go = false;
 	static ArrayList userArray = new ArrayList();
 	 static int number;
 	public static void main(String[] args)
@@ -18,19 +19,11 @@ public class Quizzer
 				{
 				System.out.println("Enter any number you wish, to end type -1 ");
 				Scanner userInput1=new Scanner(System.in);
+				
+				
+			if((number>0) && (number<=20))
+				{
 				userArray.add(number);
-				
-			if(number<=20)
-				{
-				Collections.sort(userArray);
-				}
-			if(number>0)
-				{
-				Collections.sort(userArray);
-				}
-			if(number==-1)
-				{
-				
 				}
 			else
 			{
@@ -38,7 +31,7 @@ public class Quizzer
 			System.exit(0);
 			}
 				}
-			while();
+			while(go == true);
 				
 			}
 
